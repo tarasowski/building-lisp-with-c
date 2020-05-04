@@ -1,3 +1,5 @@
+NAME= "hello_world";
+
 all:
-	cc -std=c99 -Wall hello_world.c -o hello_world
+	cc -std=c99 -Wall $(NAME).c mpc.c -ledit -lm -o $(NAME);
 

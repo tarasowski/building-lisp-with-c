@@ -1,0 +1,18 @@
+* This is called Abstract Syntax Tree, it represents the structure of the program based on the input entered by the user.
+* At the leaves of this tree are numbers and operators - the actual data to be processed
+* At the rules used to producte this par of the tree - the information on how to traverse and evaluate it
+
+
+lispy> + 5 (* 2 2)
+>
+  regex
+  operator|char:1:1 '+'
+  expr|number|regex:1:3 '5'
+  expr|>
+    char:1:5 '('
+                   operator|char:1:6 '*'
+                   expr|number|regex:1:8 '2'
+                   expr|number|regex:1:10 '2'
+                   char:1:11 ')'
+  regex
+lispy>
